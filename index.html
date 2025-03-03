@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Calculator </title>
+    <link rel="stylesheet" href="Calc.css">
+</head>
+<body>
+    <div id="Calculator">
+        <input type="text" id="text" value="" readonly>
+        <div id="Buttons">
+            <button onclick="displayButton('7')">7</button>
+            <button onclick="displayButton('8')">8</button>
+            <button onclick="displayButton('9')">9</button>
+            <button onclick="displayButton('/')" id="operation">/</button>
+            <button onclick="displayButton('4')">4</button>
+            <button onclick="displayButton('5')">5</button>
+            <button onclick="displayButton('6')">6</button>
+            <button onclick="displayButton('*')" id="operation">*</button>
+            <button onclick="displayButton('1')">1</button>
+            <button onclick="displayButton('2')">2</button>
+            <button onclick="displayButton('3')">3</button>
+            <button onclick="displayButton('-')" id="operation">-</button>
+            <button onclick="displayButton('0')">0</button>
+            <button onclick="displayButton('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="displayButton('+')" id="operation">+</button>
+            <button onclick="clearDisplay()">C</button>
+        </div>
+    </div>
+    <script src="Calc.js"></script>
+</body>
+</html>
