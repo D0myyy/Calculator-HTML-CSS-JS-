@@ -9,8 +9,8 @@ function displayButton(input) {
             display.value = "";
             display.value += input;
         }
-    } else if (['+', '-', '*', '/'].includes(input)) {
-        if (display.value !== "Error" && display.value.length < 14 && !['+', '-', '*', '/'].includes(lastChar)) {
+    } else if (['+', '-', '*', '/', '.'].includes(input)) {
+        if (display.value !== "Error" && display.value.length < 14 && !['+', '-', '*', '/', '.'].includes(lastChar)) {
             display.value += input;
         }
     }
@@ -25,6 +25,9 @@ function calculate(){
                 display.value = eval(display.value);
                 while(display.value.length > 14){
                     display.value = display.value.slice(0,-1);
+                }
+                if(display.value == "Infinity"){
+                    display.value = "Error";
                 }
             }
         }
