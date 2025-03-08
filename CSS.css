@@ -1,9 +1,18 @@
+body{
+    background: linear-gradient(135deg, rgb(212, 212, 255), rgb(162, 162, 255)); /* background-color: rgb(212, 212, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 #Calculator{
     width: 412px;
-    height: 50%;
-    padding: 5%;
+    height: 570px;
+    padding: 40px;
     border-radius: 30px;
-    background-color: rgb(16, 18, 24);
+    background-color: rgba(16, 18, 24, 92%);
+    border: 5px solid rgb(84, 90, 117);
 }
 button{
     color: white;
@@ -11,23 +20,29 @@ button{
     width: 24%;
     height: 96px;
     border-radius: 50px;
-    border: none;
+    border: 5px solid rgb(54, 57, 71);
     font-size: 50px;
     text-align: center;
     font-weight: bold;
     align-self: center;
     cursor: pointer;
+    margin-top: 5px;
+    margin-right: 1px;
 }
 button#operation{
     background-color: rgb(255, 176, 49);
+    border: 5px solid rgb(212, 144, 34);
 }
 input{
     color: white;
-    border: none;
     border-radius: 6px;
-    width: 100%;
+    width: 400px;
     height: 70px;
     font-weight: bold;
     font-size: 50px;
     background-color: rgb(51, 58, 79);
+    border: 5px solid rgb(54, 57, 71);
+    text-align: left;
+    padding-left: 13px;
+    padding-right: -20px;
 }
